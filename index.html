@@ -1,0 +1,84 @@
+<!-- design and webpage is realised by Marion Semery - ALL RIGHT RESERVED 2017 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nature Design</title>
+<link href="nature.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="images/logosm.png" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="change.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("30%", 0.1);
+	$('#third').parallax("50%", 0.3);
+
+})
+
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<img id="logo" src="images/logo.svg">
+	</div>
+	<ul id="nav">
+		<li><a id="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+
+	<div id="intro">
+		<div class="story">
+	    	<div class="float-left">
+					<span class="title"><h1>Nature design</h1></span>
+	        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat leo et ex porttitor euismod. Phasellus placerat, neque at vulputate tincidunt, massa erat hendrerit augue, in dapibus neque magna in ante. Vivamus sit amet turpis justo. Quisque quis neque tincidunt, maximus mi eu, ultricies lectus. Morbi scelerisque diam eget neque vulputate, in venenatis augue auctor. Proin facilisis est commodo velit tempor placerat. Aenean fringilla aliquet dolor sit amet suscipit.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+
+	<div id="second">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	            <h2>Lorem ipsum</h2>
+	            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae fermentum dolor, eu congue augue. Duis aliquam imperdiet tincidunt. Quisque bibendum eros id velit tincidunt semper. Morbi nec elementum ipsum. Integer eleifend pharetra justo at bibendum. Sed luctus, leo quis gravida tempor, tortor augue pretium elit, eget laoreet dui magna eget quam. Integer placerat eget risus a porttitor. Praesent eu congue lectus. Pellentesque vitae nunc vitae dui vulputate luctus. Integer elementum porta ultrices. Nulla id maximus eros. Suspendisse imperdiet leo ut urna lobortis interdum. Vivamus congue ullamcorper dolor. Aenean tincidunt dictum libero, non ullamcorper libero.</p>
+	            <p>Pellentesque lobortis vulputate mi. Nulla facilisi. Pellentesque vel viverra ligula. Fusce at tristique risus. Aenean ornare diam eu pretium placerat. Ut at turpis sit amet ligula eleifend congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer sit amet fermentum neque. Nullam non odio sit amet velit cursus posuere.</p>
+	        </div>
+	    </div> <!--.story-->
+
+	</div> <!--#second-->
+
+	<div id="third">
+		<div class="story">
+	    	<div class="float-left">
+	        	<h2>Lorem ipsum dolor</h2>
+	            <p>Sed aliquet id massa ut malesuada. Suspendisse potenti. Phasellus id arcu ipsum. Mauris sed tristique magna, quis porta eros. Praesent egestas eget massa a egestas. In ante nulla, tincidunt quis ipsum ac, pharetra euismod arcu. Aenean eu nibh rutrum, auctor eros a, facilisis enim. Nam consequat tincidunt metus, id fermentum ante imperdiet pharetra. Donec quis vulputate ligula, a faucibus dui.</p>
+	        </div>
+	    </div> <!--.story-->
+				<span id="bird">
+					<img src="images/bird.png">
+				</span>
+				<div class="footer">
+					<img id="tr-footer" src="images/triangle.svg">
+				</div>
+	</div> <!--#third-->
+
+
+</body>
+</html>

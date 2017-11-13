@@ -1,0 +1,180 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1.3
+Author: Ian Lunn
+Twitter: @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+p{
+	margin: 0 0 20px 0;
+}
+
+p, ul{
+	font-family: 'Amaranth', sans-serif;
+	font-size:20px;
+	font-weight:200;
+	font-style:normal;
+}
+
+img{
+	border: 0;
+}
+#container {
+	width: 70%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+}
+#logo {
+	height: 200px;
+	width: auto;
+}
+h1, #pixels{
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size:56px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight:700;
+	font-style:normal;
+}
+
+.title {
+	margin-top: -89px;
+	margin-bottom: auto;
+}
+
+h2{
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size:40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight:500;
+	font-style:normal;
+}
+
+#header h1, #pixels{
+
+}
+
+.float-left{
+	float: left;
+	margin: 0 0 0 20px;
+	padding-right: 50px;
+}
+
+.float-right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0 0 0;
+	text-align: center;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+}
+
+#nav li{
+	margin: 0 0 15px 0;
+}
+
+#header, #intro, #second{
+	width: 100%;
+}
+
+#intro{
+	background:url(images/pic1.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+	color: rgb(112, 88, 4);
+  height: 1000px;
+  background-position: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#second{
+	background: url(images/wild.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+	color: white;
+	height: 1216px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#second .bg{
+	background: url(images/leaf1.png) no-repeat fixed;
+  background-size: 44%;
+  background-position: left 89px top -108px!important;
+	height: 1216px;
+  right:400px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 980px;
+	z-index: 200;
+}
+
+
+#third{
+	background: url(images/ecolo.jpg) no-repeat fixed;
+  background-size: cover;
+	color: white;
+	height: 650px;
+	padding: 100px 0 0 0;
+}
+
+#fifth{
+	background: #ccc;
+	height: 400px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	overflow: auto;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 411px;
+}
+
+p.text {
+	padding-right: 100px;
+}
+
+#bird {
+	float: right;
+	width: 250px;
+	right: 200px;
+	position: absolute;
+	bottom: -1650px;
+}
+.footer {
+	float: right;
+	width: 400px;
+	height: 150px;
+}
